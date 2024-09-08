@@ -1,0 +1,63 @@
+1.create schema university
+2. use university(mentioned database_name)
+
+Data Definition Language
+
+    1.create [NOT NULL]
+        syntax:-
+            create table table_name(variable variable_datatype(size),
+            pincode datatype no_need_to_mention_datatype)
+
+    2.alter - add [syntax:-
+                alter table table_name add column column_name datatype(size)]
+            - change[syntax:-
+                alter  table table_name change old_name new_name datatype(size)]  
+            
+            - rename 
+
+            - To change only the datatype:- [old_name new_or_old_name datatype(size)]
+
+    3.drop - syntax:- drop table table_name
+
+    4.truncate - syntax:- truncate table table_name
+
+data query language//data manipulation language
+
+    1. select-[where,and,or,not, is null,order by] [syntax:- select (* or column_name)from table_name]
+
+    2. insert- syntax:-insert into table_name values(......)
+
+    3. update -[ set, where, and , or ]
+                syntax:- update table_name set metion_name_to_change=value 
+
+    4. delete - syntax:- delete from table_name
+
+DCL- Data Control Language
+    1.grant
+    2.revoke
+
+TCL- transaction control language
+    1.commit
+    2.rollback
+    3.savepoint
+
+
+aggregate functions [as]
+
+    1.sum()
+            syntax:-
+                    select sum(name) from table_name
+                    select sum(name)  as name_to_mention from table_name
+    2.max()
+            syntax:-
+                    select max(name) from table_name
+
+    3.min()
+            syntax:-
+                select min(name) from table_name
+    4.avg()
+            syntax:-
+                select avg(name) from table_name
+    5.count()
+            syntax:-
+                select count(name) from table_name
